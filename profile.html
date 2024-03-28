@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="./images/logo.png" draggable="false"></a>
+
+            <div class="search-box">
+                <img src="./images/search.png" draggable="false">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="links active-link" onclick="activeLinks()"><img src="./images/home.png" draggable="false"><span>Home</span></a></li>
+                <li><a href="#" class="links" onclick="activeLinks()"><img src="./images/network.png" draggable="false"><span>My Network</span></a></li>
+                <li><a href="#" class="links" onclick="activeLinks()"><img src="./images/jobs.png" draggable="false"><span>Jobs</span></a></li>
+                <li><a href="#" class="links" onclick="activeLinks()"><img src="./images/message.png" draggable="false"><span>Messaging</span></a></li>
+                <li><a href="#" class="links" onclick="activeLinks()"><img src="./images/notification.png" draggable="false"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./images/user-1.png" class="nav-profile-img" draggable="false" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- -------------------------- Profile Dropdown Menu------------------------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-1.png" draggable="false">
+                    <div>
+                        <h3>John Doe</h3>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/feedback.png" draggable="false">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/setting.png" draggable="false">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/help.png" draggable="false">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/display.png" draggable="false">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./images/logout.png" draggable="false">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- -------------------------- profile main------------------------------- -->
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="./images/cover-pic.png" draggable="false" width="100%">
+                <div class="profile-container-inner">
+                    <img src="./images/user-1.png" draggable="false" class="profile-pic">
+                    <h1>John Doe</h1>
+                    <b>Software Developer at Microsoft | Former Coder at Google and Facebook</b>
+                    <p>San Francisco, United States &middot; <a href="#">Contact info</a></p>
+                    <div class="mutual-connection">
+                        <img src="./images/user-2.png" draggable="false">
+                        <span>1 mutual connection: Orlando Diggs</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="./images/connect.png" draggable="false">Connect</a>
+                        <a href="#"><img src="./images/chat.png" draggable="false">Message</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ut nihil numquam eius. Eius maxime consequuntur odit totam numquam velit voluptatem adipisci sapiente suscipit! Eligendi quo eaque doloremque dolor odio.</p>
+                <a href="#" class="see-more-link">see more...</a>
+            </div>
+            <div class="profile-description">
+                <h2>Experince</h2>
+                <div class="profile-desc-row">
+                    <img src="./images/microsoft.png" draggable="false">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Jan 2013 - Present &middot; 1.5 years</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio provident corrupti architecto? Hic, minima tempora!</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./images/slack.png" draggable="false">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Jan 2013 - Present &middot; 1.5 years</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio provident corrupti architecto? Hic, minima tempora!</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./images/google.png" draggable="false">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Jan 2013 - Present &middot; 1.5 years</b>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio provident corrupti architecto? Hic, minima tempora!</p>
+                        
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experince-link">Show all 7 experinces <img src="./images/right-arrow.png" draggable="false"></a>
+            </div>
+            
+        </div>
+
+        <!-- -------------------------- profile sidebar------------------------------- -->
+        <div class="profile-sidebar"></div>
+    </div>
+    
+
+    <!-- -------------------------- scripts------------------------------- -->
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        let links = document.getElementsByClassName("links");
+
+        function activeLinks(){
+            for (link of links){
+                link.classList.remove("active-link");
+            }
+            event.currentTarget.classList.add("active-link");
+        }
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+
+        window.addEventListener('click', function(event) {
+        var isClickInside = profileMenu.contains(event.target);
+        var isToggleBtn = event.target.getAttribute('onclick') === 'toggleMenu()';
+        if (!isClickInside && !isToggleBtn) {
+            profileMenu.classList.remove("open-menu");
+        }
+    });
+    </script>
+</body>
+</html>
