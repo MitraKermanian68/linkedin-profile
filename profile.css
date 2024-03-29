@@ -492,4 +492,49 @@ a{
     padding: 0;
 }
 
+/* ----------------------------------media query for small screen--------------------------------- */
+@media only screen and (max-width: 600px){
+    .search-box{
+        background: transparent;
+        width: auto;
+        padding: 0;
+    }
+    .search-box input{
+        width: 0;
+        padding: 0;
+    }
+    .navbar-center ul li a span{
+        display: none;
+    }
+    .navbar-center ul li a{
+        padding-right: 0;
+        margin: 0;
+    }
+    .nav-profile-img{
+        width: 30px;
+    }
+    .container{
+        padding: 15px 3%;
+        display: block;
+    }
+    .profile-main{
+        flex-basis: 100%;
+    }
 
+    .profile-sidebar{
+        flex-basis: 100%;
+    }
+
+    .profile-container{
+        display: block;
+        font-size: 14px;
+    }
+    .profile-pic{
+        width: 200px;
+        margin-top: -50px;
+    }
+
+    .profile-description{
+        font-size: 14px;
+    }
+}
